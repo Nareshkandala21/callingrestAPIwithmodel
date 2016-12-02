@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITableViewDataSourcePrefetching>
 
 
+@property (strong, nonatomic) IBOutlet UITableView *table;
 @end
 
